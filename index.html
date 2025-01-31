@@ -26,13 +26,26 @@
         <p class="profile__location" data-testid="currentLocation">
           Abuja, Nigeria
         </p>
-        <p class="profile__bio" data-testid="shortBio">
-          I love transforming ideas into visually appealing and user-friendly
-          websites.
-        </p>
-
         <p class="profile__email" data-testid="emailAddress">
           <a href="mailto:francesejiro@yahoo.com">francesejiro@yahoo.com</a>
+        </p>
+
+        <p class="profile__bio" data-testid="shortBio">
+          <span id="short-text">
+            I love turning creative ideas into clean, user-friendly and
+            functional websites.
+            <span id="text-loading">...</span>
+          </span>
+          <span id="more-text" class="more-text">
+            With a keen eye for design and a strong grasp of front-end
+            development, I focus on building seamless digital experiences. I
+            enjoy problem-solving, experimenting with new web technologies, and
+            optimizing performance. My goal is to craft intuitive, accessible,
+            and visually compelling web solutions that enhance user interaction.
+          </span>
+          <button class="button-more" onclick="toggleText()" id="toggle-btn">
+            More
+          </button>
         </p>
 
         <div data-testid="socialLinks">
@@ -76,16 +89,6 @@
         </p>
       </section>
     </main>
-    <script>
-      function updateTime() {
-        const utcTimeElement = document.getElementById("utcTime");
-        const now = new Date();
-        utcTimeElement.textContent = `UTC Time: ${
-          now.toISOString().split("T")[1].split(".")[0]
-        } UTC`;
-      }
-      setInterval(updateTime, 1000);
-      updateTime();
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

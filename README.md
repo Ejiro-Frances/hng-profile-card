@@ -46,8 +46,9 @@ Ensure you have a modern web browser (Chrome, Firefox, Edge, etc.) installed.
 ```
 📂 Profile Card Project
 │── index.html  # Main profile card HTML file
-│── style.css   # CSS file for styling (if external stylesheet is used)
-└── frances.jpg # Profile picture (replace with your own image)
+│── style.css   # CSS file for styling
+│── script.js   # Javascript file
+└── frances.jpg # Profile picture
 ```
 
 ## Testing
