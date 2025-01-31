@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/d6b22e1d66.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <section class="profile-card">
+        <img
+          class="profile__img"
+          src="./img/frances.jpg"
+          alt="Ejiro Frances' Profile Picture"
+          data-testid="profilePicture"
+        />
+
+        <h1 class="profile__title" data-testid="fullName">Ejiro Frances</h1>
+
+        <h2 class="profile__job" data-testid="jobTitle">Front-End Developer</h2>
+        <p class="profile__location" data-testid="currentLocation">
+          Abuja, Nigeria
+        </p>
+        <p class="profile__bio" data-testid="shortBio">
+          I love transforming ideas into visually appealing and user-friendly
+          websites.
+        </p>
+
+        <p class="profile__email" data-testid="emailAddress">
+          <a href="mailto:francesejiro@yahoo.com">francesejiro@yahoo.com</a>
+        </p>
+
+        <div data-testid="socialLinks">
+          <h4 class="social-t">Follow me on social media</h4>
+          <ul class="social-links">
+            <li>
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/ejiro-francess-ejoh"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="https://www.github.com/Ejiro-Frances"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="https://x.com/france_ssa"
+                target="_blank"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="current-time" data-testid="currentTimeUTC" id="utcTime">
+          Loading...
+        </p>
+      </section>
+    </main>
+    <script>
+      function updateTime() {
+        const utcTimeElement = document.getElementById("utcTime");
+        const now = new Date();
+        utcTimeElement.textContent = `UTC Time: ${
+          now.toISOString().split("T")[1].split(".")[0]
+        } UTC`;
+      }
+      setInterval(updateTime, 1000);
+      updateTime();
+    </script>
+  </body>
+</html>

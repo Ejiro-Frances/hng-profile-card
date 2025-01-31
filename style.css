@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #141414;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+.profile-card {
+  background: white;
+  padding: 4rem 1.5rem 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 38rem;
+}
+
+.profile__img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #808080;
+  padding: 1px;
+}
+
+.profile__title {
+  font-size: 2.4rem;
+}
+
+.profile__job {
+  font-size: 1.5rem;
+  color: #a30015;
+}
+
+.profile__location {
+  font-weight: 600;
+  color: #8d8b8b;
+  margin-bottom: 1.4rem;
+}
+
+.profile__bio {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.profile__email {
+  display: inline-block;
+  background: #a30015;
+  color: #eee;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profile__email:hover {
+  color: #fff;
+}
+
+.social-t {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  list-style: none;
+  margin-bottom: 2rem;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.social-link {
+  border: 1px solid transparent;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.social-link:hover {
+  background: #000022;
+  color: #fff;
+}
+
+.current-time {
+  color: #060631;
+  font-weight: 600;
+}
